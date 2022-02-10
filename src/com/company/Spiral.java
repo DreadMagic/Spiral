@@ -23,16 +23,25 @@ public class Spiral {
                 count++;
             }
             else if(condition == 1){
-                for (int i = (count+1)/2; i < a.length - condition*(count+4)/4; i++){
-//                    a2[x] = a[][];
+                for (int i = (count)/2; i < a[0].length - (count+4)/4 ; i++){
+//                  a2[x] = a[i+1][a[0].length - (count+4)/4];
+                    a2[x] = 1;
                     x++;
                 }
                 count++;
             }
             else if(condition == 2){
+//                for (int i = 0; i < a[0].length - (count+3)/4; i++){
+//                    a2[x] = a[(count-1)/2][i];
+//                    x++;
+//                }
                 count++;
             }
             else if(condition == 3){
+//                for (int i = (count+1)/2; i < a.length - condition*(count+4)/4; i++){
+//                    a2[x] = a[i][(count-1)/2];
+//                    x++;
+//                }
                 count++;
             }
         }
@@ -47,24 +56,24 @@ public class Spiral {
                 {16, 17, 18, 19, 20}};
         System.out.println(Arrays.toString(spiral(a)));
 
-        int [][] b = {
-                {1, 2,  3,  4},
-                {5, 6,  7,  8},
-                {9, 10, 11, 12}};
-        System.out.println(Arrays.toString(spiral(b)));
-
-        int [][] c = {{15},{38}, {26}};
-        System.out.println(Arrays.toString(spiral(c)));
-
-        int [][] d = {
-                {40, 25},
-                {17, 99},
-                {76, 53},
-                {88, 2}};
-        System.out.println(Arrays.toString(spiral(d)));
-
-        int [][] e = {{7, 3, 5, 2}};
-        System.out.println(Arrays.toString(spiral(e)));
+//        int [][] b = {
+//                {1, 2,  3,  4},
+//                {5, 6,  7,  8},
+//                {9, 10, 11, 12}};
+//        System.out.println(Arrays.toString(spiral(b)));
+//
+//        int [][] c = {{15},{38}, {26}};
+//        System.out.println(Arrays.toString(spiral(c)));
+//
+//        int [][] d = {
+//                {40, 25},
+//                {17, 99},
+//                {76, 53},
+//                {88, 2}};
+//        System.out.println(Arrays.toString(spiral(d)));
+//
+//        int [][] e = {{7, 3, 5, 2}};
+//        System.out.println(Arrays.toString(spiral(e)));
     }
 }
 
